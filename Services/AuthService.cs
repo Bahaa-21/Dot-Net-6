@@ -145,7 +145,6 @@ public class AuthService : IAuthService
             claims: claim,
             signingCredentials: signingCredentials
             );
-
         return jwtSecurrityToken;
     }
 
