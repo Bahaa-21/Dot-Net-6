@@ -43,11 +43,13 @@ namespace DotNet_JWT_6.Migrations
 
                     b.Property<string>("FirstName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
@@ -124,15 +126,15 @@ namespace DotNet_JWT_6.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "0da44b51-b4ae-43c9-9c8f-7208c4cd946e",
-                            ConcurrencyStamp = "3992bdce-77ed-493e-9188-b8e312df41c5",
+                            Id = "d947dc19-c7b8-4f55-9a9c-0787531d0dd2",
+                            ConcurrencyStamp = "83aca9de-5c1e-4c02-936a-9280855640b3",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "d074114f-1f4d-4e13-95ed-e0fbece32976",
-                            ConcurrencyStamp = "d37be91e-38fc-4164-964b-7311f9742e77",
+                            Id = "38ceb47b-852f-4d3c-b2ef-256797f358e3",
+                            ConcurrencyStamp = "c9ea83c8-47c1-4f19-8b9b-df0f57c84606",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });

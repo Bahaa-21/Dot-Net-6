@@ -15,4 +15,5 @@ public class AppDbContext : IdentityDbContext<User>
 
         builder.ApplyConfiguration(new RoleConfiguration());
     }
+    
 }
